@@ -1,0 +1,71 @@
+﻿
+Curso Laravel Windows
+https://www.microsoft.com/en-us/download/details.aspx?id=56567https://www.microsoft.com/en-us/download/details.aspx?id=56567
+
+Para conectar con sql server
+https://www.youtube.com/watch?v=GHDbkgpXwuE
+Driver sql server
+Microsoft Drivers 3.2 for PHP for SQL server
+https://www.microsoft.com/en-us/download/details.aspx?id=20098
+
+https://www.youtube.com/watch?v=r_3Gpe4v0CE
+https://github.com/luis13711/EditorialWeb/blob/master/iteraciones.txt
+
+
+Iteración 1
+composer create-project laravel/laravel=5.3 LaravelApi
+
+Iteración 2
+php artisan app:name EditorialWeb
+
+Iteración 3
+php artisan make:migration --create="estadopedidos" CrearTablaEstadoPedidos
+
+Iteración 4
+php artisan make:migration --create="autores" CrearTablaAutores
+php artisan make:migration --create="tipoediciones" CrearTablaTipoEdiciones
+php artisan make:migration --create="generos" CrearTablaGeneros
+php artisan make:migration --create="niveles" CrearTablaNiveles
+php artisan make:migration --create="libros" CrearTablaLibros
+php artisan make:migration --create="libroautores" CrearTablaLibroAutores
+php artisan make:migration --create="empleados" CrearTablaEmpleados
+php artisan make:migration --create="representantes" CrearTablaRepresentantes
+php artisan make:migration --create="pedidos" CrearTablaPedidos
+php artisan make:migration --create="lineas" CrearTablaLineas
+
+Iteración 5
+php artisan migrate
+
+Iteración 6
+
+php artisan make:model Autor
+php artisan make:model TipoEdicion
+php artisan make:model Genero
+php artisan make:model Nivel
+php artisan make:model Libro
+php artisan make:model LibroAutor
+php artisan make:model Empleado
+php artisan make:model Representante //deben extender de lo mismo que extiende User
+php artisan make:model EstadoPedido
+php artisan make:model Pedido
+php artisan make:model Linea
+
+Iteración Número 6  
+
+composer dumpautoload
+php artisan db:seed
+
+
+Iteración 7
+php artisan make:controller AutorController
+php artisan make:controller TipoEdicionController
+php artisan make:controller GeneroController
+php artisan make:controller NivelController
+php artisan make:controller LibroController
+php artisan make:controller LibroAutorController
+php artisan make:controller EmpleadoController
+php artisan make:controller PedidoController
+php artisan make:controller LineaController
+php artisan make:controller RepresentanteController
+
+
