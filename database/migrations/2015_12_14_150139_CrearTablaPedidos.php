@@ -22,7 +22,7 @@ class CrearTablaPedidos extends Migration {
                         //$table->primary('id');
 			$table->foreign('idrepresentante')->references('id')->on('representantes');
                         $table->foreign('idestado')->references('id')->on('estadopedidos');
-			$table->timestamps();
+			$table->timestamps(4);
 		});
 	}
 

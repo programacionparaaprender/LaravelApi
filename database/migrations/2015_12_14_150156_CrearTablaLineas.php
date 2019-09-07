@@ -22,7 +22,7 @@ class CrearTablaLineas extends Migration {
 			//$table->primary('id');
 			$table->foreign('idpedido')->references('id')->on('pedidos');
 			$table->foreign('idlibro')->references('id')->on('libros');
-			$table->timestamps();
+			$table->timestamps(4);
 		});
 	}
 

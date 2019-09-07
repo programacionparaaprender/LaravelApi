@@ -22,3 +22,9 @@ Route::get('/json', function () {
     $json2 = json_encode($json);
     return $json;
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+

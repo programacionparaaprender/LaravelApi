@@ -18,7 +18,7 @@ class CrearTablaAutores extends Migration {
 			$table->string('nombre');
 			$table->string('apellido');
 			//$table->primary('id');
-			$table->timestamps();
+			$table->timestamps(4);
 		});
 	}
 

@@ -16,12 +16,16 @@ class TipoEdicion extends Model {
 	 * @var array
 	 */
 	protected $fillable = ['id', 'nombre', 'descripcion'];
+
+	protected $dateFormat = 'Ymd H:i:s';
+
+	
 	//public function propietario()
 //	{
 //		return $this->belongsTo('GestorImagenes\Usuario');
 //	}
-	public function libros()
+	/* public function libros()
 	{
 		return $this->hasMany('EditorialWeb\Libro');
-	}
+	} */
 }

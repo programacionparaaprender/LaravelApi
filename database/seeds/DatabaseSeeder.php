@@ -30,31 +30,36 @@ class DatabaseSeeder extends Seeder {
 		$this->call('UsuariosSeeder');
 		$this->call('AlbumesSeeder');
 		$this->call('FotosSeeder');*/
-		DB::statement('SET FOREIGN_KEY_CHECKS = 0');
-		Linea::truncate();
-		Pedido::truncate();
-                EstadoPedido::truncate();
-		Representante::truncate();
+		//DB::statement('SET FOREIGN_KEY_CHECKS = 0');
+		//Linea::truncate();
+		//Pedido::truncate();
+        //EstadoPedido::truncate();
+		//Representante::truncate();
 		//Empleado::truncate();
-		LibroAutor::truncate();
-		Libro::truncate();
-		Autor::truncate();
-		TipoEdicion::truncate();
-		Genero::truncate();
-		Nivel::truncate();
+		//LibroAutor::truncate();
+		//Libro::truncate();
+		//Autor::truncate();
+		//TipoEdicion::truncate();
+		//Genero::truncate();
+		//Nivel::truncate();
 
-		$this->call('AutoresSeeder');
-		$this->call('TipoEdicionesSeeder');
-		/*
-		$this->call('GenerosSeeder');
-		$this->call('NivelesSeeder');
-		$this->call('LibrosSeeder');
-		$this->call('LibroAutoresSeeder');
+		$this->call(AutoresSeeder::class);
+		//$this->call(TipoEdicionesSeeder::class);
+		
+		//$this->call('GenerosSeeder');
+		//$this->call('NivelesSeeder');
+		//$this->call('LibrosSeeder');
+		//$this->call('LibroAutoresSeeder');
 		//$this->call('EmpleadosSeeder');
-		$this->call('RepresentantesSeeder');
-                $this->call('EstadoPedidosSeeder');
-		$this->call('PedidosSeeder');
-		$this->call('LineasSeeder'); */
+		//$this->call('RepresentantesSeeder');
+        //$this->call('EstadoPedidosSeeder');
+		//$this->call('PedidosSeeder');
+		//$this->call('LineasSeeder');
+		
+		//$this->call(UsersTableSeeder::class);
+		factory(EditorialWeb\User::class, 50)->create();
+		factory(EditorialWeb\Post::class, 300)->create();
+
 	}
 
 }

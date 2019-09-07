@@ -16,12 +16,15 @@ class Autor extends Model {
 	 * @var array
 	 */
 	protected $fillable = ['id', 'nombre', 'apellido'];
+
+	protected $dateFormat = 'Ymd H:i:s';
+
 	//public function propietario()
 //	{
 //		return $this->belongsTo('GestorImagenes\Usuario');
 //	}
-	public function libros()
+	/* public function libros()
 	{
 		return $this->hasMany('EditorialWeb\Libro');
-	}
+	} */
 }

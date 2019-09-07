@@ -32,7 +32,7 @@ class CrearTablaRepresentantes extends Migration {
 			$table->rememberToken();
 			//$table->primary('id');
 			$table->foreign('idnivel')->references('id')->on('niveles');
-			$table->timestamps();
+			$table->timestamps(4);
 		});
 	}
 

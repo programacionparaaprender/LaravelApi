@@ -2,6 +2,8 @@
 Curso Laravel Windows
 https://www.microsoft.com/en-us/download/details.aspx?id=56567https://www.microsoft.com/en-us/download/details.aspx?id=56567
 
+
+
 Para conectar con sql server
 https://www.youtube.com/watch?v=GHDbkgpXwuE
 Driver sql server
@@ -69,3 +71,19 @@ php artisan make:controller LineaController
 php artisan make:controller RepresentanteController
 
 
+Falta
+-------------
+Cors
+---------------
+https://github.com/barryvdh/laravel-cors
+https://www.php.net/manual/es/timezones.america.php
+
+no recuerdo para que sirve
+php artisan make:auth
+//creara modelo y migración
+php artisan make:model Post -m
+php artisan migrate:refresh
+php artisan make:factory PostFactory --model=Post
+php artisan make:seeder UsersTableSeeder
+php artisan migrate:refresh
+php artisan db:seed
