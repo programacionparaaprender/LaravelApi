@@ -58,7 +58,7 @@ class DatabaseSeeder extends Seeder {
 		
 		//$this->call(UsersTableSeeder::class);
 		factory(EditorialWeb\User::class, 50)->create();
-		factory(EditorialWeb\Post::class, 300)->create();
+		//factory(EditorialWeb\Post::class, 300)->create();
 
 	}
 

@@ -28,8 +28,8 @@ class Post extends Model
 	protected $dateFormat = 'Ymd H:i:s';
 
     //use SoftDeletes;
-	protected $softDelete = true;
-	protected $date = ['fecha_borrado'];
+	 protected $softDelete = true;
+	protected $date = ['fecha_borrado']; 
 
 	//public function propietario()
 //	{
@@ -39,8 +39,8 @@ class Post extends Model
 	{
 		return $this->hasMany('EditorialWeb\Libro');
     } */
-    public function user()
+    public function autor()
 	{
-		return $this->belongsTo('EditorialWeb\User');
+		return $this->belongsTo('EditorialWeb\User', 'id_autor');
 	}
 }

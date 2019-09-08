@@ -20,9 +20,10 @@ class CreatePostsTable extends Migration
             $table->unsignedInteger('id_autor');
             $table->foreign('id_autor')->references('id')->on('users');
             $table->unsignedInteger('estado');
-            $table->timestamp('fecha_creacion', 4);
-            $table->timestamp('fecha_actualizacion', 4);
-            $table->timestamp('fecha_borrado', 4)->nullable();
+            $table->timestamp('fecha_creacion', 4)->nullable();
+            $table->timestamp('fecha_actualizacion', 4)->nullable();
+            $table->timestamp('fecha_borrado', 4)->nullable(); 
+            
         });
     }
 

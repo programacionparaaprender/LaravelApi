@@ -26,5 +26,9 @@ Route::get('/json', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::resource('post', 'PostController');
+
+
+Route::get('/post/eliminar/{id}', 'PostController@eliminar');
 
 
