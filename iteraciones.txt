@@ -1,18 +1,29 @@
-﻿
-Curso Laravel Windows
-https://www.microsoft.com/en-us/download/details.aspx?id=56567https://www.microsoft.com/en-us/download/details.aspx?id=56567
+﻿url front
+https://styde.net/urls-en-laravel/
 
 
+font awesome
+https://blog.jorgeivanmeza.com/2018/10/instalar-fontawesome-en-laravel-5-x/
 
 Para conectar con sql server
 https://www.youtube.com/watch?v=GHDbkgpXwuE
+
+ODBC driver sql server 17
+https://www.microsoft.com/es-es/download/details.aspx?id=56567
+
 Driver sql server
 Microsoft Drivers 3.2 for PHP for SQL server
-https://www.microsoft.com/en-us/download/details.aspx?id=20098
+https://www.microsoft.com/en-us/download/details.aspx?id=57163
 
 https://www.youtube.com/watch?v=r_3Gpe4v0CE
 https://github.com/luis13711/EditorialWeb/blob/master/iteraciones.txt
 
+Iteración 0:
+Si ya se tiene descargado ejecutar 
+composer install
+php artisan migrate
+composer dumpautoload
+php artisan db:seed
 
 Iteración 1
 composer create-project laravel/laravel=5.3 LaravelApi

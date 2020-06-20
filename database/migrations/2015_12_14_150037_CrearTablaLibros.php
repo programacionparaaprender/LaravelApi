@@ -27,9 +27,9 @@ class CrearTablaLibros extends Migration {
 			$table->String('ruta');
 			$table->double('precio')->unsigned();
 			//$table->primary('id');
-			//$table->foreign('idgenero')->references('id')->on('generos');
-			//$table->foreign('idtipoed')->references('id')->on('tipoediciones');
-			//$table->foreign('idnivel')->references('id')->on('niveles'); 
+			$table->foreign('idgenero')->references('id')->on('generos');
+			$table->foreign('idtipoed')->references('id')->on('tipoediciones');
+			$table->foreign('idnivel')->references('id')->on('niveles'); 
 			$table->timestamps(4);
 		});
 	}

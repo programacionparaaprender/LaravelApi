@@ -18,6 +18,10 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <<!-- link rel="stylesheet" href="{{asset('font-awesome/css/font-awesome.min.css')}}"> -->
+
 </head>
 <body>
     <div id="app">

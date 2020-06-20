@@ -23,6 +23,6 @@ class RepresentantesSeeder extends Seeder
                 
                 DB::table('representantes')->insert(['cedula'=>'10555400', 'nombre'=>'Zulirais', 'apellido'=>'Garcia', 'direccion'=>'fdfdsf',                    'telefono'=>'02815872676','rif'=>'105554001','email'=>'zuliraisg@gmail.com',   'password'=>bcrypt('zuli20'),      'pregunta'=>'como me llamo','respuesta'=>'Zuly',     'idnivel'=>'1','nombreEscuela'=>'Ideal',                   'admin'=>'0']);
                 
-                factory(Representante::class)->times(100)->create();
+                //factory(Representante::class)->times(100)->create();
 	}
 }

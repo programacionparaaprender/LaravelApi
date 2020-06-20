@@ -18,8 +18,8 @@ class CrearTablaLibroAutores extends Migration {
 			$table->integer('idlibro')->unsigned();
 			$table->integer('idautor')->unsigned();
 			//$table->primary('id');
-			$table->foreign('idlibro')->references('id')->on('libros');
-			$table->foreign('idautor')->references('id')->on('autores'); 
+			//$table->foreign('idlibro')->references('id')->on('libros');
+			//$table->foreign('idautor')->references('id')->on('autores'); 
 			$table->timestamps(4);
 		});
 	}

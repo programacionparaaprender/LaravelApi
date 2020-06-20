@@ -14,10 +14,14 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    Bienvenido {{ Auth::user()->name }} {{ Auth::user()->email}}
+                    <div>
+                        <a href="{{ url('/post/') }}">Ir a post</a>
+                        
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+
 @endsection

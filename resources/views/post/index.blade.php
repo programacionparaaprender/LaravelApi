@@ -23,7 +23,7 @@
 <td>{{ $item->contenido  }}</td>
 <td>{{ $item->autor->name  }}</td>
 <td>
-    <a href="{{route('post.edit', ['id' => $item->id])}}" class="btn btn-warning btn-sm">Editar</a>
+    <a href="{{route('post.edit', ['id' => $item->id])}}" class="btn btn-warning btn-sm">c</a>
     <form action="{{route('post.destroy', ['id' => $item->id])}}" method="post">
     @method('DELETE')
     @csrf
@@ -31,8 +31,12 @@
     </form>
 </td>
 <td>
-    <a href="/LaravelApi/public/post/{{$item->id}}/edit" class="btn btn-warning btn-sm">Editar</a>
-    <a href="/LaravelApi/public/post/eliminar/{{$item->id}}" class="btn btn-danger btn-sm">Eliminar</a>
+    <a href="/LaravelApi/public/post/{{$item->id}}/edit" class="btn btn-warning btn-sm">
+        <!-- <i class="fas fa-edit"></i> -->Editar
+    </a>
+    <a href="/LaravelApi/public/post/eliminar/{{$item->id}}" class="btn btn-danger btn-sm">
+        <!-- <i class="far fa-trash-alt"></i> -->Eliminar
+    </a>
 </td>
 </tr>
 @endforeach

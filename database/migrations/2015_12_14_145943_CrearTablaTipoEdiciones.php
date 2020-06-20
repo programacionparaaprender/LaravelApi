@@ -18,7 +18,9 @@ class CrearTablaTipoEdiciones extends Migration {
 			$table->string('nombre');
 			$table->string('descripcion');
 			//$table->primary('id');
+			//$table->timestamps(4);
 			$table->timestamps(4);
+
 		});
 	}
 

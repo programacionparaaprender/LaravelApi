@@ -21,44 +21,19 @@ class DatabaseSeeder extends Seeder {
 	 */
 	public function run()
 	{
-		//Model::unguard();
-		/*
-		Foto::truncate();
-		Album::truncate();
-		Usuario::truncate();
-
-		$this->call('UsuariosSeeder');
-		$this->call('AlbumesSeeder');
-		$this->call('FotosSeeder');*/
-		//DB::statement('SET FOREIGN_KEY_CHECKS = 0');
-		//Linea::truncate();
-		//Pedido::truncate();
-        //EstadoPedido::truncate();
-		//Representante::truncate();
-		//Empleado::truncate();
-		//LibroAutor::truncate();
-		//Libro::truncate();
-		//Autor::truncate();
-		//TipoEdicion::truncate();
-		//Genero::truncate();
-		//Nivel::truncate();
-
+		$this->call(NivelesSeeder::class);
+		$this->call(TipoEdicionesSeeder::class);
 		$this->call(AutoresSeeder::class);
-		//$this->call(TipoEdicionesSeeder::class);
-		
-		//$this->call('GenerosSeeder');
-		//$this->call('NivelesSeeder');
-		//$this->call('LibrosSeeder');
-		//$this->call('LibroAutoresSeeder');
-		//$this->call('EmpleadosSeeder');
-		//$this->call('RepresentantesSeeder');
-        //$this->call('EstadoPedidosSeeder');
-		//$this->call('PedidosSeeder');
-		//$this->call('LineasSeeder');
-		
+		$this->call(GenerosSeeder::class);
+		$this->call(LibrosSeeder::class);
+		$this->call(LibroAutoresSeeder::class);
+		$this->call(RepresentantesSeeder::class);
+        $this->call(EstadoPedidosSeeder::class);
+	    $this->call(PedidosSeeder::class);
+		$this->call(LineasSeeder::class);
 		//$this->call(UsersTableSeeder::class);
 		factory(EditorialWeb\User::class, 50)->create();
-		//factory(EditorialWeb\Post::class, 300)->create();
+		factory(EditorialWeb\Post::class, 300)->create();
 
 	}
 

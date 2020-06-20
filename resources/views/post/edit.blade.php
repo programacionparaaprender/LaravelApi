@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+<!-- Styles -->
+<link href="{{ asset('css/app.css') }}" rel="stylesheet">
 <div class="container">
 <h1>Editar post</h1>
 @if($errors->any())

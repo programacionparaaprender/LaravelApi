@@ -6,6 +6,9 @@ use EditorialWeb\User;
 use EditorialWeb\Post;
 use Illuminate\Http\Request;
 use DB;
+use Auth;
+
+
 class PostController extends Controller
 {
     /**
@@ -15,9 +18,13 @@ class PostController extends Controller
      */
     public function index()
     {
-        $post = Post::All();
-        //$post = DB::select('select top 100 * from posts');
-        return view('post.index', ['post' => $post]);
+        if(Auth::user()){
+            $post = Post::All();
+            //$post = DB::select('select top 100 * from posts');
+            return view('post.index', ['post' => $post]);    
+        }else 
+            return view('welcome');
+        
     }
 
     /**
