@@ -18,9 +18,17 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+   
+    <!-- <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+
+    
+    <link rel="stylesheet" href="{{ asset('css/bootstrap-theme.min.css') }}">
+
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script> -->
+
 
     <!-- Font Awesome -->
-    <<!-- link rel="stylesheet" href="{{asset('font-awesome/css/font-awesome.min.css')}}"> -->
+    <!-- link rel="stylesheet" href="{{asset('font-awesome/css/font-awesome.min.css')}}"> -->
 
 </head>
 <body>
